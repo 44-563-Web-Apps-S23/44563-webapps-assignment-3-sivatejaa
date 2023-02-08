@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        </style>
     <title> First HTML Program</title>
 </head>
 
@@ -31,5 +38,52 @@ One of the Indian player <b>Virender Sehwag</b> bangs boundary for the first its
   </ul>  
 
   <p><a href="aboutme.html">About Me</a></p>
+  <hr>
+
+  <table>
+    <tr>
+      <th>Country</th>
+      <th>Reason</th>
+      <th>Days to spend</th>
+    </tr>
+    <tr>
+      <td>India</td>
+      <td>India has different cultures</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>US</td>
+      <td>Us is one of the most developed countries</td>
+      <td>40</td>
+    </tr>
+    <tr>
+        <td>Dubai</td>
+        <td>Dubai has the tallest building called Burj Khalifa also we can go skiing in the desert</td>
+        <td>35</td>
+      </tr>
+      <tr>
+        <td>Switzerland</td>
+        <td>Switzerland has the amazing weather, beautifull mountains and good food.</td>
+        <td>30</td>
+      </tr>
+  </table>
+
+  <hr>
+  <h2> PHP Error logging</h2>
+
+  <blockquote cite="https://stackoverflow.com/questions/10331084/error-logging-in-a-smooth-way">
+
+    Error logging, in a smooth way- StackOverFlow
+  </blockquote>
+  <a href="https://stackoverflow.com/questions/10331084/error-logging-in-a-smooth-way">Quick link  </a>
+  <pre>
+
+  php_flag display_startup_errors off
+  php_flag display_errors off
+  php_flag html_errors off
+  # log to file
+  php_flag log_errors on
+  php_value error_log /location/to/php_error.log
+  </pre>
 </body>
 </html>
